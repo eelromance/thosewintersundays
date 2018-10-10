@@ -90,7 +90,7 @@ transition:.5s;
 }
 
 .stanza, p {
-  font-size: 4vw;
+  font-size: 60px;
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
@@ -252,4 +252,22 @@ transition: .25s;
 
 .anked {
   color: inherit;
+}
+
+@media only screen and (max-width: 1500px) {
+  .stanza, p{
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .stanza, p{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .stanza, p{
+    font-size: 25px;
+  }
 }
