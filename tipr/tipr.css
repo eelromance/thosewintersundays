@@ -1,0 +1,58 @@
+/*
+Tipr 4.0.1
+Copyright (c) 2018 Tipue
+Tipr is released under the MIT License
+http://www.tipue.com/tipr
+
+Normal theme
+*/
+
+.tipr_content
+{
+    max-width: 50vw;
+    color: black;
+    font-size: 1vw;
+     background-color: #f1f1f1;
+     padding: 1em;
+      margin-left: 1em;
+     margin-right: 1em;
+}
+
+.tipr_container_above, .tipr_container_below
+{
+     display: none;
+     position: absolute;
+     z-index: 1;
+     left: 19vw;
+     bottom: 0px;
+
+}
+.tipr_point_above, .tipr_point_below
+{
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
+	border-radius: 3px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+}
+.tipr_point_above:after, .tipr_point_below:after
+{
+	position: absolute;
+	pointer-events: none;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	border-width: 7px;
+	left: 50%;
+	margin-left: -7px;
+}
+.tipr_point_above:after
+{
+	top: 100%;
+	border-top-color: rgba(255, 255, 255, 0);
+}
+.tipr_point_below:after
+{
+	bottom: 100%;
+	border-bottom-color: rgba(255, 255, 255, 0);
+}

@@ -1,0 +1,255 @@
+
+#title_page {
+  text-align: center;
+  background-image: linear-gradient(rgb(234, 243, 251), rgb(89, 123, 168));
+}
+
+#page_one {
+  text-align: center;
+  background-image: linear-gradient(rgb(89, 123, 168), rgb(1, 10, 38));
+  color: white;
+}
+
+#page_two {
+  text-align: center;
+  background-image: linear-gradient(rgb(1, 10, 38), rgb(36, 27, 27));
+  color: white;
+}
+
+#page_three {
+  text-align: center;
+  background-image: linear-gradient(rgb(36, 27, 27), rgb(125, 64, 25));
+  color: white;
+}
+
+#page_four {
+  text-align: center;
+  background-image: linear-gradient(rgb(125, 64, 25), rgb(247, 184, 117));
+  color: white;
+}
+
+#page_five {
+  text-align: center;
+  background-image: linear-gradient(rgb(247, 184, 117), rgb(255, 234, 157), rgb(190, 190, 190));
+  color: black;
+}
+
+#page_six {
+  text-align: center;
+  background-image: linear-gradient(rgb(190, 190, 190), rgb(190, 190, 190));
+  color: white;
+}
+
+#title_page h1 {
+  font-size: 10vw;
+  cursor: default;
+}
+
+#title_page h2 {
+  font-size: 8vw;
+  cursor: default;
+}
+
+#title_page h3 {
+  font-size: 2vw;
+  cursor: default;
+}
+
+svg{
+  fill:black;
+  -o-transition:.5s;
+-ms-transition:.5s;
+-moz-transition:.5s;
+-webkit-transition:.5s;
+transition:.5s;
+width: 3vw;
+margin-top: 2em;
+margin-bottom: 2em;
+cursor: grab;
+}
+
+svg:hover {
+  fill:rgb(194, 217, 255);
+}
+
+.whiteBtn {
+  fill:white;
+  -o-transition:.5s;
+-ms-transition:.5s;
+-moz-transition:.5s;
+-webkit-transition:.5s;
+transition:.5s;
+}
+
+.whiteBtn:hover {
+  fill:rgb(67, 100, 153);
+}
+
+.annotation:hover {
+  color: rgb(253, 255, 194);
+}
+
+.stanza, p {
+  font-size: 4vw;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: default;
+}
+
+.section {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.annotation {
+    position: relative;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    display: inline-block;
+     -webkit-transform: translateZ(0);
+    border-bottom: 0px dotted black; /* If you want dots under the hoverable text */
+}
+
+#title_page .annotation {
+  background-color: rgba(234, 243, 251, 0.3);
+}
+
+#page_two .annotation {
+    background-color: hsla(0, 0%, 45%, 0.5);
+}
+
+#page_four .annotation {
+    background-color: hsla(30, 100%, 67%, 0.5);
+}
+
+#page_five .a7  {
+    background-color: hsla(48, 38%, 74%, 0.5);
+}
+
+#page_five .a8 {
+    background-color: hsla(48, 64%, 54%, 0.5);
+}
+
+#page_six .a9  {
+    background-color: hsla(0, 0%, 57%, 0.5);
+}
+
+#page_six .a10 {
+    background-color: hsla(0, 0%, 36%, 0.5);
+}
+
+#end_page {
+  background-color: rgb(190, 190, 190);
+}
+
+#end_page h1 {
+  font-size: 10vw;
+  font-style: italic;
+}
+
+#end_page a {
+  text-align: left;
+  font-size: 5vw;
+  -o-transition:.5s;
+-ms-transition:.5s;
+-moz-transition:.5s;
+-webkit-transition:.5s;
+transition:.5s;
+}
+
+#end_page a:hover {
+  color: rgb(249, 220, 117);
+}
+
+.endBox {
+  text-align: center;
+}
+
+/*
+.annotationText {
+  font-size: 1.5vw;
+  background: white;
+  overflow: scroll;
+  bottom: 100%;
+  color: black;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 20px;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+
+
+.annotationText::after {
+  border: transparent solid 10px;
+  border-top-color: white;
+  content: '';
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+/* This bridges the gap so you can mouse into the annotationText without it disappearing
+.annotation .annotationText:before {
+  bottom: -20px;
+  content: '';
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+
+.annotation:hover .annotationText {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition
+.lte8 .annotation .annotationText {
+  display: none;
+}
+
+.lte8 .annotation:hover .annotationText {
+  display: block;
+}
+
+*/
+.a3 {
+  background-color: transparent;
+}
+.c {
+  color: inherit;
+}
+
+.b {
+  color: inherit;
+}
+
+.w {
+  color: inherit;
+}
+
+.anked {
+  color: inherit;
+}
