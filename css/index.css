@@ -154,12 +154,12 @@ transition:.5s;
 
 #end_page a {
   text-align: left;
-  font-size: 5vw;
-  -o-transition:.5s;
--ms-transition:.5s;
--moz-transition:.5s;
--webkit-transition:.5s;
-transition:.5s;
+  font-size: 4vw;
+  -o-transition:.25s;
+-ms-transition:.25s;
+-moz-transition:.25s;
+-webkit-transition:.25s;
+transition: .25s;
 }
 
 #end_page a:hover {
